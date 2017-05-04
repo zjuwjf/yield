@@ -10,7 +10,7 @@ Based on an extremely refined trigger.js, not Promise, to achieve the purpose of
 
 	y.install('ajax', function (callback, url) {
 	    request.get(url, { timeout: 30000 }, (error, response, body) => {
-	        callback(undefined, { error, response, body })
+	        callback(error, { response, body })
 	    })
 	})
 	
